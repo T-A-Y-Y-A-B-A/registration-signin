@@ -1,0 +1,212 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('anime.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #f30d0d;
+    background-color: #f5f7fa;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typography */
+h1{
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 10px;
+}
+h2,
+h3 {
+    color: #f3a32a;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    background-color: #f8fafc;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: #e2e8f0;
+}
+
+.tab-btn.active {
+    background-color: #fc0707;
+    color: white;
+}
+
+/* Form Container */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ff7519;
+    font-size: 16px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+input.error,
+textarea.error {
+    border-color: #e53e3e;
+}
+
+.error-message {
+    color: #e53e3e;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 20px;
+}
+
+.char-counter {
+    text-align: right;
+    font-size: 14px;
+    color: #718096;
+    margin-top: 5px;
+}
+
+/* Buttons */
+.submit-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    display: none;
+}
+
+.success-message.active {
+    display: block;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #10b981;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 20px;
+}
+
+.reset-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
